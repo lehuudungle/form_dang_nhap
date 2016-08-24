@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Login_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R0R-jK-pm4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8_JWKP.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MMl-0N-5zN">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f33-H7-zWh">
+                                        <rect key="frame" x="171" y="204" width="70" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.602541210541649" blue="0.76279493403356113" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Đăng ký"/>
+                                        <connections>
+                                            <action selector="acction_register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iLc-lI-ltx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwP-av-bPp">
+                                        <rect key="frame" x="54" y="204" width="87" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.602541210541649" blue="0.76279493403356113" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.21794145955524014" green="1" blue="0.18991673291773781" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Đăng nhập">
+                                            <color key="titleColor" red="0.22491473994441824" green="0.37143494052508186" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="acction_login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkm-6D-ijw"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miJ-Pc-gJc">
+                                        <rect key="frame" x="40" y="77" width="237" height="30"/>
+                                        <color key="backgroundColor" red="0.91323396179404015" green="0.98160045186324962" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVS-to-nvv">
+                                        <rect key="frame" x="40" y="142" width="237" height="30"/>
+                                        <color key="backgroundColor" red="0.92076769430484862" green="0.99381268670399414" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llo-3x-Flu">
+                                        <rect key="frame" x="54" y="261" width="187" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.63528679322840231" blue="0.70184732625333712" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Danh sách người dùng"/>
+                                        <connections>
+                                            <action selector="acction_dsach:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZeA-Ai-GMw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cih-1P-9yI">
+                                        <rect key="frame" x="40" y="312" width="237" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.97794471153846152" green="0.12437755215613482" blue="0.12505706739185909" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vf-nm-kGL">
+                                        <rect key="frame" x="40" y="361" width="240" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71639736309299895" green="0.52533250232191686" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl_message" destination="cih-1P-9yI" id="uPP-u3-2f3"/>
+                        <outlet property="tf_Passwrok" destination="SVS-to-nvv" id="QG5-dw-e2V"/>
+                        <outlet property="tf_User" destination="miJ-Pc-gJc" id="GOU-fQ-u98"/>
+                        <outlet property="tview_dsach" destination="4Vf-nm-kGL" id="d45-4e-YZA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="396"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="8_JWKP.jpg" width="750" height="500"/>
+    </resources>
+</document>
